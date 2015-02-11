@@ -21,16 +21,18 @@ function replaceWords(str, word, replacement){
     return str;
 }
 
-function makeLiList(json){
-    chrome.storage.sync.get(json, function(result){
+function makeLiList(storageData){
+    chrome.storage.sync.get(storageData, function(result){
         var str = '';
         for(var entry in result){
-            console.log(entry);
-            var entryUnderscore = replaceWords(entry, ' ', '_');
-            str = replaceWords(liEl, '{{id}}', entryUnderscore);
-            str = replaceWords(str, '{{key}}', entry);
-            str = replaceWords(str, '{{value}}', result[entry]);
-            $(".dict-list").append(str);
+            if(entry !== 'config'){
+                console.log(entry);
+                var entryUnderscore = replaceWords(entry, ' ', '_');
+                str = replaceWords(liEl, '{{id}}', entryUnderscore);
+                str = replaceWords(str, '{{key}}', entry);
+                str = replaceWords(str, '{{value}}', result[entry]);
+                $(".dict-list").append(str);
+            }
         }
     });
 }
@@ -64,6 +66,7 @@ $(document).ready(function(){
                 $('#'+key).remove();
             }
             if(data !== obj){
+                // duplicate code here.
                 for(var entry in obj){
                     console.log(entry);
                     var entryUnderscore = replaceWords(entry, ' ', '_');
