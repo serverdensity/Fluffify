@@ -11,7 +11,7 @@ function installed() {
         if(config.enabled === undefined) {
             config.enabled = true;
             setIcon(config.enabled);
-            chrome.storage.sync.set({'enabled': config.enabled});
+            chrome.storage.sync.set({'config': config.enabled});
         }
     });
 
@@ -29,8 +29,6 @@ function toggleState(){
         config.enabled = !config.enabled;
         setIcon(config.enabled);
         chrome.storage.sync.set({'config': config.enabled});
-
-
     });
 }
 
