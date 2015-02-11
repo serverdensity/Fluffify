@@ -14,3 +14,24 @@
     border: 1px solid #c4cdd3;
     background-image: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(227,235,242) 50%,rgb(230,240,248) 100%);
 }
+
+.menu-item img {
+    position: relative;
+    top: 3px;
+    padding-right: 8px;
+}
+
+.logo {
+    width: 15px;
+    height: 15px;
+}
+
+.logo-title {
+    width: 6em;
+    top: 2px;
+}
+
+#main-menu a {
+    text-decoration: none;
+    color: #000;
+}

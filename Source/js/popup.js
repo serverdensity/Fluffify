@@ -2,7 +2,7 @@ function setIcon(enabled){
     if (enabled){
         chrome.browserAction.setIcon({path: "images/enabled-icon-19.png"});
     } else {
-        chrome.browserAction.setIcon({path: "images/disabled-icon-19.png"});
+        chrome.browserAction.setIcon({path: "images/disabled-icon-19.jpg"});
     }
 }
 
@@ -27,7 +27,7 @@ console.log("testing");
 function toggleState(){
     chrome.storage.sync.get('enabled', function(item){
         item.enabled = !item.enabled;
-
+        setIcon(item.enabled);
         chrome.storage.sync.set({'enabled': item.enabled});
 
 
@@ -37,8 +37,8 @@ function toggleState(){
 $(document).ready(function(){
     $('#enabled').on('click', function(event){
         console.log("muu!");
-        toggleState();
         $(".onoff").toggle();
+        toggleState();
     });
 });
 
