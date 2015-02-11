@@ -1,0 +1,16 @@
+.menu-item {
+    white-space: nowrap;
+    line-height: 26px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0 6px;
+    padding-right: 25px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.menu-item:hover {
+    border: 1px solid #c4cdd3;
+    background-image: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(227,235,242) 50%,rgb(230,240,248) 100%);
+}
