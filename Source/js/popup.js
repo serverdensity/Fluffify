@@ -7,11 +7,11 @@ function setIcon(enabled){
 }
 
 function installed() {
-    chrome.storage.sync.get('enabled', function(item){
-        if(item.enabled === undefined) {
-            item.enabled = true;
-            setIcon(item.enabled);
-            chrome.storage.sync.set({'enabled': item.enabled});
+    chrome.storage.sync.get('config', function(config){
+        if(config.enabled === undefined) {
+            config.enabled = true;
+            setIcon(config.enabled);
+            chrome.storage.sync.set({'enabled': config.enabled});
         }
     });
 
@@ -25,10 +25,10 @@ function installed() {
 console.log("testing");
 
 function toggleState(){
-    chrome.storage.sync.get('enabled', function(item){
-        item.enabled = !item.enabled;
-        setIcon(item.enabled);
-        chrome.storage.sync.set({'enabled': item.enabled});
+    chrome.storage.sync.get('config', function(config){
+        config.enabled = !config.enabled;
+        setIcon(config.enabled);
+        chrome.storage.sync.set({'config': config.enabled});
 
 
     });
