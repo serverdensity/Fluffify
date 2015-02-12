@@ -18,7 +18,9 @@ function installed() {
     $.getJSON('/data/dictionary.json', function(data){
         console.log('test');
         for(var entry in data){
-            chrome.storage.sync.set({entry: data[entry]});
+            var obj = {};
+            obj[entry] = data[entry];
+            chrome.storage.sync.set(obj);
         }
     });
 }
