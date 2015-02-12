@@ -6,24 +6,6 @@ function setIcon(enabled){
     }
 }
 
-function installed() {
-    chrome.storage.sync.get('enabled', function(config){
-        if(config.enabled === undefined) {
-            config.enabled = true;
-            setIcon(config.enabled);
-            chrome.storage.sync.set({'enabled': config.enabled});
-        }
-    });
-
-    $.getJSON('/data/dictionary.json', function(data){
-        for(var entry in data){
-            chrome.storage.sync.set({entry: data[entry]});
-        }
-    });
-}
-
-console.log("testing");
-
 function toggleState(){
     chrome.storage.sync.get('enabled', function(config){
         config.enabled = !config.enabled;
@@ -43,7 +25,9 @@ $(document).ready(function(){
 
 
 chrome.browserAction.onClicked.addListener(toggleState);
-chrome.runtime.onInstalled.addListener(installed);
+chrome.runtime.onInstalled.addListener(function(){
+    installed();
+});
 
 
 // chrome.browserAction.setIcon({path: "images/icon.png"});
