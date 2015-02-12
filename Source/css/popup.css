@@ -15,6 +15,10 @@
     background-image: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(227,235,242) 50%,rgb(230,240,248) 100%);
 }
 
+:focus {
+    outline: 0px;
+}
+
 .menu-item img {
     position: relative;
     top: 3px;
