@@ -1,6 +1,9 @@
-var liEl = "<li id='{{id}}' class='dict-entry'>{{key}} | {{value}}" +
+var liEl = "<li id='{{id}}' class='dict-entry'>" +
+            "<div class='left li-el'>{{key}}</div>" +
+            "<div class='right li-el'> {{value}}</div>" +
+            "<div class='li-el'>" +
             "<img class='remove' src='images/disabled.png'></li>" +
-        "";
+            "</div>";
 
 function replaceAll(str,mapObj){
     var re = new RegExp(Object.keys(mapObj).join("|"),"gi");
