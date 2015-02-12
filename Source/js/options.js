@@ -25,7 +25,7 @@ function makeLiList(storageData){
     chrome.storage.sync.get(storageData, function(result){
         var str = '';
         for(var entry in result){
-            if(entry !== 'config'){
+            if(entry !== 'enabled'){
                 console.log(entry);
                 var entryUnderscore = replaceWords(entry, ' ', '_');
                 str = replaceWords(liEl, '{{id}}', entryUnderscore);
