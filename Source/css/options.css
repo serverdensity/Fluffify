@@ -1,42 +1,35 @@
 .remove {
     cursor: pointer;
 }
-
 ul {
     margin: 0;
     padding: 0;
 }
 
 .wrapper {
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
+    border-radius: 5px;
 }
-
 .input {
     width: 32%;
 }
-
 .dict-list {
     margin-top: 1em;
 }
-
 .heading {
     font-weight: bold;
     font-size: 13px;
     padding-bottom: .5em;
 }
-
 .dict-entry {
-    width: 416px;
+    width: 500px;
     text-align: center;
     list-style-type: none;
-
 }
-
 .dict-entry img {
     width: 15px;
 }
-
 .li-el {
     float: left;
     width: 33%;
