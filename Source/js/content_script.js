@@ -42,8 +42,10 @@ function walk(node, dict)
 function handleText(textNode, dict) {
     var text = textNode.nodeValue;
     for(var entry in dict){
-        regex = new RegExp("\\b" + entry, "gi");
-        text = text.replace(regex, dict[entry]);
+        if(entry !== 'enabled'){
+            regex = new RegExp("\\b" + entry, "gi");
+            text = text.replace(regex, dict[entry]);
+        }
     }
 
     // // Get the corner cases
