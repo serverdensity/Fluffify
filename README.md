@@ -7,4 +7,4 @@ Inspired by the famous extension 'Cloud-to-butt', [XKCD #1288](http://xkcd.com/1
 
 We have a plugin to turn marketing speek into what it really is, arcane sysadmin magic.  
 
-Go ahead and make a pull request to [add more words](https://github.com/serverdensity/Fluffify) to share with your fellow downloaders. You can also download the plugin here: URL. 
+Go ahead and make a pull request to [add more words](https://github.com/serverdensity/Fluffify/tree/master/fluffify/data) to share with your fellow downloaders. You can also download the plugin at the [chrome store](https://chrome.google.com/webstore/detail/fluffify/aiifcleijeipadfhbgmcjapekknfkamg) 
