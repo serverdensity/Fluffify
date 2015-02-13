@@ -22,13 +22,4 @@ $(document).ready(function(){
     });
 });
 
-
-
 chrome.browserAction.onClicked.addListener(toggleState);
-chrome.runtime.onInstalled.addListener(function(){
-    installed();
-});
-
-
-// chrome.browserAction.setIcon({path: "images/icon.png"});
-// chrome.browserAction.setBadgeText({text: "?"});
