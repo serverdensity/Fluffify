@@ -1,12 +1,12 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt Plus",
+	"name": "Fluffify",
 	"version": "1.2",
-	"description": "Replaces the text 'the cloud' with 'my butt', as well as 'cloud' with 'butt' in certain contexts.",
+	"description": "A list of those words you'd just like to replace with something else. You can contribute to more on github!",
 	"browser_action": {
 		"default_icon": {
-			"19": "images/enabled-icon-19.png"
-			//"38": "images/icon38.png"
+			"19": "images/fluff-19.png",
+			"38": "images/fluff.png"
 		},
 		"default_popup": "popup.html",
 		"default_title": "Fluffify"
@@ -20,9 +20,10 @@
 	],
 	"background": {
 		"scripts": [
-					"js/background.js",
-					"js/jquery-2.1.3.min.js"
-				]
+					"js/jquery-2.1.3.min.js",
+					"js/background.js"
+				],
+				"persistent": false
 	},
 	"content_scripts":
 	[
