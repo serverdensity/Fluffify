@@ -1,0 +1,16 @@
+.fluffify-ani {
+    border-radius: 5px;
+    background-color: rgba(85, 172, 201, 1);
+    -webkit-animation: animateColor 2s linear forwards;
+}
+
+
+
+@-webkit-keyframes animateColor {
+    0% {
+        background-color: rgba(85, 172, 201, 1);
+    }
+    100% {
+        background-color: rgba(85, 172, 201, 0.2);
+    }
+}
