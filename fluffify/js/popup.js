@@ -1,8 +1,8 @@
 function setIcon(enabled){
     if (enabled){
-        chrome.browserAction.setIcon({path: "images/fluff-19.png"});
+        chrome.browserAction.setIcon({path: "images/fluff.svg"});
     } else {
-        chrome.browserAction.setIcon({path: "images/fluff-grey-19.png"});
+        chrome.browserAction.setIcon({path: "images/fluff-grey.svg"});
     }
 }
 
