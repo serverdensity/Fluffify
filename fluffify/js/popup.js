@@ -9,16 +9,32 @@ function setIcon(enabled){
 function toggleState(){
     chrome.storage.sync.get('enabled', function(config){
         config.enabled = !config.enabled;
-        setIcon(config.enabled);
         chrome.storage.sync.set({'enabled': config.enabled});
+        setIcon(config.enabled);
+        checkState();
+    });
+}
+
+function checkState(){
+    chrome.storage.sync.get('enabled', function(config){
+        console.log('trigger');
+        if(config.enabled){
+            console.log('on');
+            $(".on").addClass('disabled').removeClass('enabled');
+            $(".off").addClass('enabled').removeClass('disabled');
+        } else {
+            $(".off").addClass('disabled').removeClass('enabled');
+            $('.on').addClass('enabled').removeClass('disabled');
+        }
     });
 }
 
 $(document).ready(function(){
+    checkState();
     $('#enabled').on('click', function(event){
         console.log("muu!");
-        $(".onoff").toggle();
         toggleState();
+        // $(".onoff").toggle();
     });
 });
 

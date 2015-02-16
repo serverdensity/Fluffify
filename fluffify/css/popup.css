@@ -39,3 +39,11 @@
     text-decoration: none;
     color: #000;
 }
+
+.disabled {
+    display: none;
+}
+
+.enabled {
+    display: inline;
+}
