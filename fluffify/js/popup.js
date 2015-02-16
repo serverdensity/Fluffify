@@ -34,7 +34,6 @@ $(document).ready(function(){
     $('#enabled').on('click', function(event){
         console.log("muu!");
         toggleState();
-        // $(".onoff").toggle();
     });
 });
 
