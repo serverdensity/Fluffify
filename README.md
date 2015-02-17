@@ -13,7 +13,7 @@ Go ahead and make a pull request to [add more words](https://github.com/serverde
 
 Fluffify is really simple:
 
-* [Download Fluffify for Chrome](https://chrome.google.com/webstore/detail/fluffify/aiifcleijeipadfhbgmcjapekknfkamg)
+* [Download Fluffify for Chrome](https://chrome.google.com/webstore/detail/fluffify/mmihnpeogpiailhfefflbeannjgimapg)
 * Enable the plugin
 * Refresh your webpage
 * We'll replace the words and highlight the changes.
