@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Fluffify",
-	"version": "1.4",
-	"description": "A list of those words you'd just like to replace with something else. You can contribute to more on github!",
+	"name": "Fluffify for Chrome",
+	"version": "1.5",
+	"description": "Corporate phrases turn our stomach. We're replacing the terms we're so sick of hearing - to a fun equivalent. Contribute on GitHub!",
 	"browser_action": {
 		"default_icon": {
 			"19": "images/fluff.png"
