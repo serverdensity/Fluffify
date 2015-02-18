@@ -17,6 +17,7 @@ Fluffify is really simple:
 * Enable the plugin
 * Refresh your webpage
 * We'll replace the words and highlight the changes.
+* Go check out a website like [this one](http://www.kimballgroup.com/category/business-intelligence-and-data-warehouse-articles/)
 
 ### Optional
 
