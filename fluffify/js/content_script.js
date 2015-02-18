@@ -63,6 +63,7 @@ function handleText(textNode, dict) {
                 span.className = "fluffify-ani";
                 span.textContent = dict[entry];
                 span.title = entry;
+                span.dataset.original = entry;
                 textNode.parentNode.insertBefore(span, newNode);
             }
 
