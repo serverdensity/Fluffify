@@ -1,38 +1,38 @@
 .remove {
-    cursor: pointer;
+  cursor: pointer;
 }
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    width: 500px;
-    margin: 0 auto;
-    border-radius: 5px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 .input {
-    width: 32%;
+  width: 32%;
 }
 .dict-list {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 .heading {
-    font-weight: bold;
-    font-size: 13px;
-    padding-bottom: .5em;
+  font-weight: bold;
+  font-size: 13px;
+  padding-bottom: .5em;
 }
 .dict-entry {
-    width: 500px;
-    text-align: center;
-    list-style-type: none;
+  width: 500px;
+  text-align: center;
+  list-style-type: none;
 }
 .dict-entry img {
-    width: 15px;
+  width: 15px;
 }
 .li-el {
-    float: left;
-    width: 33%;
-    box-sizing: border-box;
-    margin-bottom: .5em;
+  float: left;
+  width: 33%;
+  box-sizing: border-box;
+  margin-bottom: .5em;
 }
