@@ -56,13 +56,13 @@ function handleText(textNode, dict) {
                 offset = match.index;
             }
             if(offset !== -1 && offset != undefined && match) {
-                console.log("match!");
                 newNode = textNode.splitText(offset);
                 newNode.data = newNode.data.substr(entry.length);
 
                 var span = document.createElement("span");
                 span.className = "fluffify-ani";
                 span.textContent = dict[entry];
+                span.title = entry;
                 textNode.parentNode.insertBefore(span, newNode);
             }
 
