@@ -1,6 +1,6 @@
-chrome.storage.sync.get('enabled', function (config){
-  if(config.enabled){
-    chrome.storage.sync.get(null, function (data){
+chrome.storage.sync.get('enabled', function (config) {
+  if(config.enabled) {
+    chrome.storage.sync.get(null, function (data) {
       walk(document.body, data);
     });
   } else {
@@ -23,7 +23,7 @@ function walk (node, dict) {
     case 11:
       child = node.firstChild;
       while (child) {
-        if (child.parentElement.className.indexOf('fluffify-ani') > 0){
+        if (child.parentElement.className.indexOf('fluffify-ani') > 0) {
           continue;
         } else {
           next = child.nextSibling;
@@ -56,7 +56,7 @@ function handleText (textNode, dict) {
       if (offset !== -1 && offset != undefined && match) {
         newNode = textNode.splitText(offset);
         newNode.data = newNode.data.substr(entry.length);
-        var span = document.createElement("span");
+        var span = document.createElement('span');
         span.className = 'fluffify-ani';
         span.textContent = dict[entry];
         span.title = entry;
