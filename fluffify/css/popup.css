@@ -1,49 +1,49 @@
 .menu-item {
-    white-space: nowrap;
-    line-height: 26px;
-    cursor: pointer;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    padding: 0 6px;
-    padding-right: 25px;
-    -webkit-user-select: none;
-    user-select: none;
+  white-space: nowrap;
+  line-height: 26px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 0 6px;
+  padding-right: 25px;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .menu-item:hover {
-    border: 1px solid #c4cdd3;
-    background-image: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(227,235,242) 50%,rgb(230,240,248) 100%);
+  border: 1px solid #c4cdd3;
+  background-image: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(227,235,242) 50%,rgb(230,240,248) 100%);
 }
 
 :focus {
-    outline: 0px;
+  outline: 0px;
 }
 
 .menu-item img {
-    position: relative;
-    top: 3px;
-    padding-right: 8px;
+  position: relative;
+  top: 3px;
+  padding-right: 8px;
 }
 
 .logo {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .logo-title {
-    width: 6em;
-    top: 2px;
+  width: 6em;
+  top: 2px;
 }
 
 #main-menu a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .disabled {
-    display: none;
+  display: none;
 }
 
 .enabled {
-    display: inline;
+  display: inline;
 }
