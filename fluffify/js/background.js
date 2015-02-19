@@ -19,7 +19,7 @@ function installed() {
         }
 
     });
-    $.getJSON('/data/dictionary.json', function(data) {
+    $.getJSON('/gossip/dictionary.json', function(data) {
             for (var entry in data) {
                 var obj = {};
                 obj[entry] = data[entry];
