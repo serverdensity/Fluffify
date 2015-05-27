@@ -12,7 +12,7 @@ chrome.storage.sync.get('enabled', function(config){
 
 function walk(node, dict)
 {
-    var excludeElements = ['script', 'style', 'iframe', 'cavas'];
+    var excludeElements = ['script', 'style', 'iframe', 'canvas'];
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
 
