@@ -7,7 +7,7 @@ Coorporate phrases and 'enterprise' words turn our stomach. Unfortunately other 
 
 We've made *Fluffify for DevOps teams*, in keeping with that we've also open sourced it. As part of the DevOps community why not add to the list of words that we're banning from our browsers: 
 
-Go ahead and make a pull request to [add more words](https://github.com/serverdensity/Fluffify/tree/master/fluffify/data) to share with the DevOps community.
+Go ahead and make a pull request to [add more words](https://github.com/serverdensity/Fluffify/tree/master/fluffify/gossip) to share with the DevOps community.
 
 ## How to use
 
