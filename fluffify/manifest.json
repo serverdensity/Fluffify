@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Fluffify for Chrome",
-	"version": "1.7",
+	"version": "1.8",
 	"description": "Corporate phrases turn our stomach. We're replacing the terms we're so sick of hearing - to a fun equivalent. Contribute on GitHub!",
 	"browser_action": {
 		"default_icon": {
